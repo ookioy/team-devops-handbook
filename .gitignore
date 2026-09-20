@@ -1,0 +1,15 @@
+# Environment variables
+.env
+
+# Python cache
+pycache/
+*.py[cod]
+
+# Archives
+*.tar.gz
+
+# Test executable
+test-app
+
+# macOS
+.DS_Store
