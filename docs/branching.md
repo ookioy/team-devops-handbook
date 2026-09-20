@@ -15,6 +15,7 @@
 - `chore/` — технічні та допоміжні зміни.
 
 Приклади:
+
 ```text
 docs/add-branching-guide
 feature/add-config-loader
