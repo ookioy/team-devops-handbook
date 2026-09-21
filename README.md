@@ -53,3 +53,5 @@ chmod +x .git/hooks/commit-msg
 
 ```bash
 ls -l .git/hooks/commit-msg
+
+Якщо файл має право на виконання, у його правах доступу буде присутній прапорець `x`.
