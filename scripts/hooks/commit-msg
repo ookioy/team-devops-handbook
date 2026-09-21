@@ -1,0 +1,16 @@
+#!/bin/sh
+
+COMMIT_MSG_FILE="$1"
+COMMIT_MSG=$(head -n 1 "$COMMIT_MSG_FILE")
+
+PATTERN='^(feat|fix|docs|refactor|test|chore): .+'
+
+if ! echo "$COMMIT_MSG" | grep -Eq "$PATTERN"; then
+    echo "ERROR: Invalid commit message."
+    echo "Expected format: <type>: <description>"
+    echo "Allowed types: feat, fix, docs, refactor, test, chore"
+    echo "Example: docs: add hook documentation"
+    exit 1
+fi
+
+exit 0
